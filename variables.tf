@@ -1,7 +1,7 @@
 variable "project_name" {
   description = "Project name prefix used for tagging AWS resources"
   type        = string
-  default     = "terraform_workshop"
+  default     = "terraform-workshop"
   nullable    = false
 }
 
