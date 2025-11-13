@@ -7,6 +7,12 @@ terraform {
   }
 
   required_version = ">= 1.2"
+
+  backend "s3" {
+    bucket = "terraform-state-github-vaaniicx"
+    key    = "terraform.tfstate"
+    region = var.aws_region
+  }
 }
 
 provider "aws" {
